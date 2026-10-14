@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mst Sumona Khatun | Aspiring Data Scientist</title>
+<meta name="description" content="Portfolio of Mst Sumona Khatun, Computer Science undergraduate and aspiring data scientist.">
+<meta property="og:title" content="Mst Sumona Khatun | Aspiring Data Scientist">
+<meta property="og:description" content="Projects, skills and education of a Computer Science undergraduate.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f8fafc;--card:#fff;--tx:#0f172a;--mut:#475569;--ac:#0f766e;--on:#fff;--soft:#e6f4f1;--bd:#e2e8f0;--fh:'Plus Jakarta Sans',system-ui,sans-serif;--fm:'JetBrains Mono',ui-monospace,Consolas,monospace}
+[data-theme=dark]{--bg:#0b1220;--card:#111a2e;--tx:#e2e8f0;--mut:#9fb0c7;--ac:#2dd4bf;--on:#042f2e;--soft:#12333a;--bd:#223049}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px;overflow-x:hidden}
+body{font:400 1rem/1.7 var(--fh);color:var(--tx);background:var(--bg);overflow-x:hidden}
+h1,h2,h3{line-height:1.2}a{color:inherit}
+:focus-visible{outline:3px solid var(--ac);outline-offset:3px}
+.wrap{max-width:1000px;margin:auto;padding:4.5rem 1.25rem 0}
+h2{font-size:clamp(1.6rem,4vw,2.1rem);font-weight:800;margin-bottom:1.5rem;display:flex;align-items:center;gap:.7rem}
+h2::before{content:"";width:28px;height:4px;border-radius:4px;background:var(--ac)}
+.nav{position:sticky;top:0;z-index:10;display:flex;align-items:center;gap:.8rem;padding:.7rem 1.25rem;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--bd);flex-wrap:wrap}
+.brand{font-size:1.25rem;font-weight:800;text-decoration:none;margin-right:auto}.brand span{color:var(--ac)}
+nav{display:none;width:100%;flex-direction:column;order:5}nav.open{display:flex}
+nav a{padding:.5rem .7rem;text-decoration:none;font-weight:500;border-radius:8px;color:var(--mut)}
+nav a:hover,nav a.on{color:var(--ac);background:var(--soft)}
+.ib{font-size:1.2rem;background:var(--card);color:var(--tx);border:1px solid var(--bd);border-radius:10px;width:42px;height:42px;cursor:pointer}
+.hero{display:grid;gap:2.5rem;align-items:center;min-height:80vh;padding-top:3rem}
+.hi{color:var(--ac);font-weight:700}
+h1{font-size:clamp(2.4rem,8vw,4rem);font-weight:800;letter-spacing:-.02em;margin:.2rem 0}
+.tag{font-size:clamp(1.15rem,3vw,1.5rem);font-weight:700;color:var(--mut)}
+.lead{color:var(--mut);max-width:32rem;margin-top:1rem}
+.cta{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.5rem}
+.btn{display:inline-block;padding:.75rem 1.4rem;border-radius:10px;background:var(--ac);color:var(--on);font:700 1rem var(--fh);border:2px solid var(--ac);text-decoration:none;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 18px #0f766e33}
+.btn.ghost{background:transparent;color:var(--ac)}
+.btn.sm{padding:.35rem 1rem;font-size:.9rem}.btn[aria-disabled=true]{opacity:.65}
+.code{background:#0f172a;color:#e2e8f0;border-radius:14px;font:400 .88rem/1.8 var(--fm);box-shadow:0 20px 40px #0f172a33;overflow:hidden}
+.code .bar{display:flex;gap:6px;padding:.7rem 1rem;background:#1e293b}
+.code .bar i{width:11px;height:11px;border-radius:50%;background:#64748b}
+.code pre{padding:1rem 1.2rem;overflow-x:auto;font:inherit}
+.k{color:#5eead4}.s{color:#fbbf24}.c{color:#94a3b8}
+.box{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:1.5rem}
+.box h3{font-size:1.15rem;margin-bottom:.4rem}.box p{color:var(--mut)}
+.groups{display:grid;gap:1.25rem}
+.groups h3{font-size:1rem;color:var(--ac);margin-bottom:.8rem}
+.tags{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0}
+.tags li{padding:.3rem .85rem;border-radius:999px;background:var(--soft);border:1px solid var(--bd);font-size:.9rem;font-weight:500}
+.tg{margin:.9rem 0 1.1rem}.tg li{font-family:var(--fm);font-size:.78rem;background:var(--soft);color:var(--ac)}
+.tl{list-style:none;padding:0 0 0 1.6rem;border-left:3px solid var(--bd);display:grid;gap:1.6rem}
+.tl li{position:relative}
+.tl li::before{content:"";position:absolute;left:-2.1rem;top:.45rem;width:13px;height:13px;border-radius:50%;background:var(--ac);box-shadow:0 0 0 4px var(--bg)}
+.tl p,.tl small{color:var(--mut)}
+.grid,.two{display:grid;gap:1.25rem}
+.proj{display:flex;flex-direction:column;transition:transform .2s,border-color .2s}
+.proj:hover,.proj:focus-within{transform:translateY(-4px);border-color:var(--ac)}
+.proj .cta{margin-top:auto}
+label{display:block;font-weight:500;margin-top:.8rem}
+input,textarea{width:100%;padding:.7rem .9rem;border:1.5px solid var(--bd);border-radius:10px;font:inherit;background:var(--bg);color:var(--tx)}
+.err{display:block;color:#b91c1c;font-size:.85rem;min-height:1.1rem}[data-theme=dark] .err{color:#fca5a5}
+#ok{color:#15803d;font-weight:500;margin-top:.8rem}[data-theme=dark] #ok{color:#86efac}
+form .btn{margin-top:.8rem}
+.links{display:grid;gap:.6rem;align-content:start}.links a{color:var(--ac);font-weight:500;word-break:break-word}
+footer{text-align:center;padding:3rem 1rem;color:var(--mut)}
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
+.js .rv.in{opacity:1;transform:none}
+@media(min-width:768px){
+ .ib.burger{display:none}nav{display:flex;flex-direction:row;width:auto;order:0}.nav{flex-wrap:nowrap}
+ .hero{grid-template-columns:1.1fr 1fr}.grid,.two{grid-template-columns:1fr 1fr}.groups{grid-template-columns:1fr 1fr 1fr}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#home">Sumona<span>.</span></a>
+  <button class="ib burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu">&#9776;</button>
+  <nav id="menu" aria-label="Main"><a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#achievements">Achievements</a><a href="#contact">Contact</a></nav>
+  <button class="ib theme" aria-label="Switch light or dark theme">&#9728;</button>
+</header>
+<main>
+<section id="home" class="wrap hero">
+  <div>
+    <p class="hi">Hello, I'm</p>
+    <h1>Mst Sumona Khatun</h1>
+    <p class="tag">Aspiring Data Scientist</p>
+    <p class="lead">Computer Science undergraduate who builds database-driven systems and explores data with Python.</p>
+    <div class="cta"><a class="btn" href="#projects">View projects</a><a class="btn ghost" href="#contact">Contact me</a></div>
+  </div>
+  <div class="code" aria-hidden="true">
+    <div class="bar"><i></i><i></i><i></i></div>
+<pre><span class="c"># explore the data</span>
+<span class="k">import</span> pandas <span class="k">as</span> pd
+<span class="k">import</span> numpy <span class="k">as</span> np
+
+df = pd.read_csv(<span class="s">"data.csv"</span>)
+df = df.dropna()
+df.describe()</pre>
+  </div>
+</section>
+
+<section id="about" class="wrap rv"><h2>About me</h2>
+  <p class="box">Computer Science undergraduate with hands-on experience developing a Bank Management System using HTML, CSS, PHP, and MySQL. Skilled in the software development life cycle, database design, data analysis, and agile methodologies, with strong problem-solving and documentation skills.</p></section>
+
+<section id="skills" class="wrap rv"><h2>Skills</h2>
+  <div class="groups">
+    <div class="box"><h3>Data and analysis</h3><ul class="tags"><li>Python Programming</li><li>Data Analysis with Pandas</li><li>Data Cleaning with NumPy</li><li>Statistical Analysis</li><li>Data Visualization</li><li>Data Structures and Algorithms</li></ul></div>
+    <div class="box"><h3>Development and databases</h3><ul class="tags"><li>Database Design</li><li>Bank Management System Development</li><li>User Interface Design</li></ul></div>
+    <div class="box"><h3>Workflow</h3><ul class="tags"><li>Software Development Life Cycle</li><li>Agile Methodologies</li><li>Version Control with Git</li><li>Linux Command Line</li><li>Problem Solving</li><li>Code Documentation</li><li>Documentation and Reporting</li></ul></div>
+  </div></section>
+
+<section id="education" class="wrap rv"><h2>Education</h2>
+  <ol class="tl">
+    <li><h3>BSc in Computer Science</h3><p>International University of Business Agriculture and Technology, Dhaka, Bangladesh</p><small>Expected graduation: 2027</small></li>
+    <li><h3>Higher Secondary, Science</h3><p>Nawabganj Govt. College, Nawabganj, Rajshahi, Bangladesh</p></li>
+    <li><h3>Secondary School Certificate, Science</h3><p>Baipur High School, Baipur, Rajshahi, Bangladesh</p></li>
+  </ol></section>
+
+<section id="projects" class="wrap rv"><h2>Projects</h2>
+  <div class="grid">
+    <article class="box proj"><h3>Pharmacy Management System</h3><p>A pharmacy management system project.</p>
+      <ul class="tags tg"><li>HTML5</li><li>Vanilla Modern CSS</li><li>PHP (7.4 - 8.3+)</li><li>MySQL via XAMPP</li></ul>
+      <div class="cta"><a class="btn sm ghost" href="#" aria-disabled="true" title="Add live link">Live</a><a class="btn sm" href="https://github.com/codewithsumona/Devlopment-of-Pharmacy-Management-System" target="_blank" rel="noopener">Code</a></div></article>
+    <article class="box proj"><h3>Bank Management System</h3><p>A bank management system built with web and database technologies.</p>
+      <ul class="tags tg"><li>HTML</li><li>CSS</li><li>PHP</li><li>MySQL</li></ul>
+      <div class="cta"><a class="btn sm ghost" href="#" aria-disabled="true" title="Add live link">Live</a><a class="btn sm" href="https://github.com/codewithsumona/Bank-Management" target="_blank" rel="noopener">Code</a></div></article>
+    <article class="box proj"><h3>Diabetes Prediction</h3><p>A data science project on predicting diabetes.</p>
+      <ul class="tags tg"><li>Python</li><li>Data Science</li></ul>
+      <div class="cta"><a class="btn sm ghost" href="#" aria-disabled="true" title="Add live link">Live</a><a class="btn sm" href="https://github.com/codewithsumona/Diabetes-Prediction_Data_Science" target="_blank" rel="noopener">Code</a></div></article>
+    <article class="box proj"><h3>Hostel Management System</h3><p>A hostel management system project.</p>
+      <ul class="tags tg"><li>HTML</li><li>CSS</li><li>PHP</li><li>MySQL</li></ul>
+      <div class="cta"><a class="btn sm ghost" href="#" aria-disabled="true" title="Add live link">Live</a><a class="btn sm" href="https://github.com/codewithsumona/Hostel-Managment-system" target="_blank" rel="noopener">Code</a></div></article>
+  </div></section>
+
+<section id="achievements" class="wrap rv"><h2>Achievements</h2><p class="box">[Nothing listed yet.]</p></section>
+
+<section id="contact" class="wrap rv"><h2>Contact</h2>
+  <div class="two">
+    <form id="form" class="box" novalidate>
+      <label for="n">Name</label><input id="n" name="name" autocomplete="name"><span class="err"></span>
+      <label for="e">Email</label><input id="e" name="email" type="email" autocomplete="email"><span class="err"></span>
+      <label for="m">Message</label><textarea id="m" name="message" rows="4"></textarea><span class="err"></span>
+      <button class="btn" type="submit">Send message</button><p id="ok" role="status"></p>
+    </form>
+    <div class="box links"><h3>Find me online</h3>
+      <a href="mailto:sumonakhatun806@gmail.com">sumonakhatun806@gmail.com</a>
+      <a href="https://github.com/codewithsumona" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/codewithsumona/" target="_blank" rel="noopener">LinkedIn</a></div>
+  </div></section>
+</main>
+<footer><p>&copy; <span id="yr"></span> Mst Sumona Khatun</p></footer>
+<script>
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const root=document.documentElement;
+
+/* Menu */
+const burger=$('.burger'),menu=$('#menu'),links=$$('nav a');
+burger.onclick=()=>burger.setAttribute('aria-expanded',menu.classList.toggle('open'));
+links.forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');burger.setAttribute('aria-expanded','false')}));
+const spy=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('on',a.hash==='#'+e.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
+$$('main section').forEach(s=>spy.observe(s));
+
+/* Theme (remembered) */
+try{const t=localStorage.getItem('theme');if(t)root.dataset.theme=t}catch(e){}
+$('.theme').onclick=()=>{const t=root.dataset.theme==='dark'?'light':'dark';root.dataset.theme=t;try{localStorage.setItem('theme',t)}catch(e){}};
+
+/* Scroll reveal */
+if('IntersectionObserver' in window){
+  root.classList.add('js');
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+  $$('.rv').forEach(el=>io.observe(el));
+}
+
+/* Placeholder Live links */
+$$('a[aria-disabled=true]').forEach(a=>a.addEventListener('click',e=>e.preventDefault()));
+
+/* Contact form validation (front-end only) */
+$('#form').onsubmit=e=>{
+  e.preventDefault();const f=e.target,v=[f.name,f.email,f.message].map(i=>i.value.trim());
+  const er=[v[0]?'':'Enter your name.',/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v[1])?'':'Enter a valid email address.',v[2].length>=10?'':'Write a message of at least 10 characters.'];
+  $$('.err',f).forEach((s,i)=>s.textContent=er[i]);
+  $('#ok').textContent=er.some(Boolean)?'':'Thanks! Your message is ready. Add a form service to send it.';
+  if(!er.some(Boolean))f.reset();
+};
+$('#yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
